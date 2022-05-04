@@ -1,0 +1,138 @@
+/* BASE */
+body {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+body {
+	background: #EEE;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	text-align: center;
+	font-weight: lighter;
+}
+input, button {
+  outline: 0;
+}
+/* MAIN */
+#app {
+	max-width: 600px;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding: 2px;
+}
+
+#app header {
+	padding: 20px 0 60px;
+}
+
+/* FORM */
+form {
+	width: 378px;
+	margin: 0 auto;
+}
+input[type="text"] {
+	font-size: 20px;
+	font-family: sans-serif;
+	padding:7px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #eee;
+	border:solid 1px #000;
+}
+input[type="text"]:focus {
+	outline: none;
+}
+button,
+input[type="submit"] {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: sans-serif;
+  background-color: transparent;
+  border:1px solid #777;
+  padding:11px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+}
+button:hover,
+input[type="submit"]:hover {
+	background-color: #000;
+	color:#fff;
+}
+/* TODOS LIST */
+.todos {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.todos li {
+	background: white;
+	padding: 8px 20px;
+	margin-top: 2px;
+}
+.todos li:hover {
+	background: #EEE;
+}
+.todos .custom-checkbox {
+	display: inline-block;
+	vertical-align: middle;
+}
+.todos .custom-checkbox input[type="checkbox"] {
+  display:none;
+}
+.todos .custom-checkbox label {
+  display:block;
+  width:20px;
+  height:20px;
+  margin:0 auto;
+  border:solid 1px #000;
+  cursor: pointer;
+}
+.todos .custom-checkbox label span {
+  display: block;
+  width:10px;
+  height:10px;
+  margin:5px;
+}
+.todos .custom-checkbox input[type="checkbox"]:checked ~ label span {
+  background-color: #000;
+}
+.todos .item {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+  margin-left: 15px;
+}
+.todos .done .item {
+	color: #000;
+	text-decoration: line-through;
+}
+
+.todos a {
+	visibility: hidden;
+	cursor: pointer;
+	margin-left: 20px;
+	font-size: .5em;
+	text-transform: uppercase;
+	color: navy;
+}
+.todos li:hover a {
+	visibility: visible;
+}
+.todos a:hover {
+	text-decoration: underline;
+}
+/* FOOTER */
+#app footer {
+	padding: 60px 0;
+	text-align: center;
+}
+.status p .count {
+	font-weight: bold;
+	color:#f00;
+}
